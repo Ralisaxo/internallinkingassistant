@@ -1,0 +1,8 @@
+streamlit
+pandas
+numpy
+scikit-learn
+nltk
+spacy==3.7.2 # Or latest stable, ensure en_core_web_sm is compatible
+google-generativeai
+# en_core_web_sm will be downloaded by spacy.cli.download if not present
