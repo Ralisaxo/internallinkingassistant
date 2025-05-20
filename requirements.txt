@@ -1,8 +1,24 @@
 streamlit
 pandas
-numpy
+numpy==1.24.4  # Pinning NumPy
 scikit-learn
 nltk
-spacy==3.7.2 # Or latest stable, ensure en_core_web_sm is compatible
+# For spacy 3.7.2
+thinc>=8.1.12,<8.3.0  # More specific Thinc range
+spacy==3.7.2
 google-generativeai
-# en_core_web_sm will be downloaded by spacy.cli.download if not present
+
+# Other spacy dependencies that sometimes need pinning for stability
+# (Uncomment if the above doesn't work directly)
+# catalogue==2.0.10
+# confection==0.1.4
+# cymem==2.0.8
+# jinja2==3.1.3 # Often a source of issues if too new/old
+# murmurhash==1.0.10
+# preshed==3.0.9
+# pydantic!=1.8,!=1.8.1,!=2.5.0,!=2.5.1,<3.0.0,>=1.7.4
+# srsly>=2.4.8,<3.0.0
+# typer>=0.9.0,<0.13.0 # Typer is for spacy.cli, might not be the issue here
+# wasabi==1.1.2
+# packaging>=20.0
+# langcodes>=3.3.0,<4.0.0
